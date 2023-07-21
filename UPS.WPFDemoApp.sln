@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UPS.WPFDemoApp", "UPS.WPFDemoApp\UPS.WPFDemoApp.csproj", "{2864979C-BA80-4786-806E-60A641523640}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UPS.WPFDemoApp.Converters", "UPS.WPFDemoApp.Conerters\UPS.WPFDemoApp.Converters.csproj", "{FB400B70-477B-465E-B46A-56D7B7AA21B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{BB6BF4B1-7950-464E-A526-B59B6C1FD9B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UPS.WPFDemoApp.Helpers", "UPS.WPFDemoApp.Helpers\UPS.WPFDemoApp.Helpers.csproj", "{1E9EAE50-B631-4B8E-B466-F86227F46E7C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UPS.WPFDemoApp.Models", "UPS.WPFDemoApp.Models\UPS.WPFDemoApp.Models.csproj", "{9AF1254E-3BD3-4EC3-82AC-75D7FC848D04}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UPS.WPFDemoApp.ViewModels", "UPS.WPFDemoApp.ViewModels\UPS.WPFDemoApp.ViewModels.csproj", "{F0367CEE-6B4B-4389-805B-6568CF62CE01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2864979C-BA80-4786-806E-60A641523640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2864979C-BA80-4786-806E-60A641523640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2864979C-BA80-4786-806E-60A641523640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2864979C-BA80-4786-806E-60A641523640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB400B70-477B-465E-B46A-56D7B7AA21B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB400B70-477B-465E-B46A-56D7B7AA21B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB400B70-477B-465E-B46A-56D7B7AA21B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB400B70-477B-465E-B46A-56D7B7AA21B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E9EAE50-B631-4B8E-B466-F86227F46E7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E9EAE50-B631-4B8E-B466-F86227F46E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E9EAE50-B631-4B8E-B466-F86227F46E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E9EAE50-B631-4B8E-B466-F86227F46E7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AF1254E-3BD3-4EC3-82AC-75D7FC848D04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AF1254E-3BD3-4EC3-82AC-75D7FC848D04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AF1254E-3BD3-4EC3-82AC-75D7FC848D04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AF1254E-3BD3-4EC3-82AC-75D7FC848D04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0367CEE-6B4B-4389-805B-6568CF62CE01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0367CEE-6B4B-4389-805B-6568CF62CE01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0367CEE-6B4B-4389-805B-6568CF62CE01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0367CEE-6B4B-4389-805B-6568CF62CE01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {443C58BF-0F46-458A-B06B-0C51E4BBA142}
+	EndGlobalSection
+EndGlobal

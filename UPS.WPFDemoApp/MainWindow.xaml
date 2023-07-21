@@ -1,0 +1,67 @@
+﻿<Window x:Class="UPS.WPFDemoApp.EmployeeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UPS.WPFDemoApp" xmlns:viewmodels="clr-namespace:UPS.WPFDemoApp.ViewModels;assembly=UPS.WPFDemoApp.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:EmployeeVM}"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    
+    <Grid RenderTransformOrigin="0.499,0.54" Height="auto" Width="auto">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200*"></RowDefinition>
+            <RowDefinition Height="100*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+        <DataGrid Grid.Row="1" x:Name="EmployeeGrid"  Width="auto" d:ItemsSource="{d:SampleData ItemCount=5}" RenderTransformOrigin="0.5,0.5" SelectedIndex="{ Binding ID}">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Delete" x:Name="btnDelete" CommandParameter="{Binding Path= ID }" 
+                                Click="btnDelete_Click"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+            <DataGrid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.127"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.855"/>
+                </TransformGroup>
+            </DataGrid.RenderTransform>
+            
+        </DataGrid>
+        <GroupBox Grid.Row="0"  Header="Employee Form"  >
+            <Grid Height="auto" Name="EmployeeForm">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100*"/>
+                    <ColumnDefinition Width="200*"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Name" HorizontalAlignment="Left" VerticalContentAlignment="Center" Grid.Column="0" Grid.Row="0"/>
+                <TextBox Grid.Row="0" Grid.Column="1" x:Name="TextBoxName"  
+                       Text="{Binding Path=Name, Mode=TwoWay}"  Margin="5"  Width="300" HorizontalAlignment="Left"/>
+                <Label Content="Email" HorizontalAlignment="Left" VerticalContentAlignment="Center"  Grid.Row="1" Grid.Column="0"/>
+                <TextBox Grid.Row="1" Grid.Column="1" x:Name="TextBoxEmail"   
+                       Text="{Binding Path=Email, Mode=TwoWay }" Margin="5" Width="70" HorizontalAlignment="Left"/>
+                <TextBlock Grid.Row="1" Grid.Column="1" x:Name="TextBlockId"           Visibility="Hidden" Text="{Binding Path=ID, Mode=TwoWay}"/>
+                <Label Content="Gender" HorizontalAlignment="Left" VerticalContentAlignment="Center"                       Grid.Row="2" Grid.Column="0" />
+                <Label Content="Status" HorizontalAlignment="Left" VerticalContentAlignment="Center" Grid.Row="3" Grid.Column="0" />
+                <CheckBox Grid.Column="1" Content=""  HorizontalAlignment="Left" Margin="4,12,0,0" Grid.Row="3" VerticalAlignment="Top"  IsChecked="{Binding Path=Status, Mode=TwoWay}" />
+                <Button Grid.Column="1" Content="Save" HorizontalAlignment="Left" Margin="255,28,0,0" Grid.Row="3" VerticalAlignment="Top" Click="Save_Click" Width="50" Height="22"/>
+                <ComboBox Name="ComboboxGender" Grid.Column="1" HorizontalAlignment="Left" Margin="5,0,0,0" Grid.Row="2" VerticalAlignment="Center" Width="120" Text="{Binding Path=Gender, Mode=TwoWay}" />
+            </Grid>
+        </GroupBox>
+
+
+    </Grid>
+    
+</Window>
