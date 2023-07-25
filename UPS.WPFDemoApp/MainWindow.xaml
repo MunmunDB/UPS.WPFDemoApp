@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UPS.WPFDemoApp" xmlns:viewmodels="clr-namespace:UPS.WPFDemoApp.ViewModels;assembly=UPS.WPFDemoApp.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:EmployeeVM}"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Employee" Height="450" Width="800">
     
     <Grid RenderTransformOrigin="0.499,0.54" Height="auto" Width="auto">
         <Grid.RowDefinitions>
@@ -34,7 +34,7 @@
             </DataGrid.RenderTransform>
             
         </DataGrid>
-        <GroupBox Grid.Row="0"  Header="Employee Form"  >
+        <GroupBox Grid.Row="0"  Header="Form"  >
             <Grid Height="auto" Name="EmployeeForm">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="50"/>
